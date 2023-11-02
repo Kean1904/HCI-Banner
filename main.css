@@ -1,0 +1,543 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+}
+/* Home webpage */
+
+a:is(:link, :active, :visited).active{
+    color: black;
+    background-color: cyan;
+    border-radius: 4px;
+    padding: 3px 4px;
+}
+
+/* main-body of Home */
+.section {
+    height: 100vh;
+    margin: 30px;
+}
+
+.section h2 { 
+    text-align: lefT;
+    font-size: 75px;
+    color: #5938dc;
+    padding-top: 100px;
+    text-shadow: 2px 1px 10px black;
+} 
+
+.paragraph{
+    color: rgb(149, 200, 245);
+    font-size: 40px;
+    text-shadow: 2px 1px 4px black;
+}
+
+
+img {
+    display: flex;
+    height: 30px;
+    position: absolute;
+    left: 220px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Home {
+    height: 100vh;
+    background-color: #000;
+    background-image: url("html\ 3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+    transition: all 0.4s;
+}
+
+a:hover, a:focus {
+    color: cyan;
+}
+
+a::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: rgb(2, 182, 253);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+a:hover::after, a:focus::after {
+    opacity: 1;
+}
+
+/* Header */
+.Home-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 0 2rem;
+    background-color: #151B54;
+    opacity: 1px;
+}
+
+.navbar {
+    width: 95%;
+    height: 60px;;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Gallery webpage */
+
+.Gallery {
+    height: 100vh;
+    background-color: #000;
+    background-image: url(html\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Gallery-logo {
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+li {
+    list-style: none;
+    font-weight: 600;
+}
+
+a {   
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    transition: all 0.4s;
+}
+
+a:hover, a:focus {
+    color: cyan;
+}
+
+a::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: cyan;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    display: block;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+a:hover::after a:focus::after {
+    opacity: 1;
+}
+
+/* Search bar */
+.Image-search {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    margin: 30px -85px;
+}
+
+.Image-search input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #4e58b2;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    border: 1px solid white;
+    box-shadow: 2px 1px 2px black;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+button{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 3px;
+    margin: 5px 10px 5px 10px;
+    width: 5%;
+    color: #fff;
+    background: #929add;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #4e58b2;
+    color: #000;
+}
+
+/* Home-header */
+
+.Gallery-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    position: relative;
+    padding: 0 2rem;
+    background-color: #151B54;
+}
+.Gallery-nav {
+    width: 95%;
+    height: 60px;;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Gallery-nav .Gallery-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Gallery-nav .Gallery-link {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Profile Website */
+
+.profile{
+    height: 100vh;
+    background-color: #000;
+    background-image: url("html\ 3.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.profile-logo{
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+    transition: all 0.4s;
+
+}
+
+a:hover, a:focus{
+    color: cyan;
+}
+
+a::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: rgb(2, 182, 253);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+a:hover::after, a:focus::after{
+    opacity: 1;
+
+}
+
+.profile-header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding:  0 2rem;
+    background-color: #151B54;
+}
+
+.prof-navbar{
+    width: 95%;
+    height: 60px;;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prof-navbar{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.prof-navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+/* Profile/ Our Team */
+
+.title{
+    font-size: 75px;
+    color: white;
+    text-shadow: 3px 2px 4px #929add;
+}
+
+h3 {
+    color:#fff;
+}
+
+h5{
+    color: red;
+    font-size: 15px;
+}
+
+.team {
+    position: relative;
+    width: 96%;
+    height: 98%;
+    margin: 30px;
+    background-color: #351f8c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -1;
+}
+
+.team-content{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* Kean Pic */
+.team-content .kean {
+    position: relative;
+    right: 0;
+    width: 180px;
+    height: 45vh;
+    margin: 10px -32.5vh;
+    border-radius: 10px;
+}
+
+.border-box {
+    border: 3px solid white;
+    backdrop-filter: blur(10px);
+    margin: 0 4px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 2px 1px 3px #929add;
+}
+
+/* Christian Pic */
+
+.team-content .chan{
+    position: relative;
+    width: 180px;
+    height: 45vh;
+    margin: 10px -30vh;
+    border-radius: 10px;
+}
+
+.border-box1{
+    border: 3px solid white;
+    backdrop-filter: blur(10px);
+    margin: 0 4px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 2px 1px 3px #929add;
+}
+
+/* John Russel Pic */
+
+.team-content .russel {
+    position: relative;
+    width: 190px;
+    height: 45vh;
+    margin: 10px -29vh;
+    border-radius: 10px;
+}
+
+.border-box2 {
+    border: 3px solid white;
+    backdrop-filter: blur(10px);
+    margin: 0 1px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 2px 1px 3px #929add;
+}
+
+/* Leeroy pic */
+
+.team-content .leeroy {
+    position: relative;
+    width: 190px;
+    height: 45vh;
+    margin: 10px -31vh;
+    border-radius: 10px;
+}
+
+.border-box3 {
+    border: 3px solid white;
+    backdrop-filter: blur(10px);
+    margin: 0 1px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 2px 1px 3px #929add;
+}
+
+/* Ranier Pic */
+
+.team-content .rd {
+    position: relative;
+    width: 190px;
+    height: 45vh;
+    margin: 10px -38vh;
+    border-radius: 10px;
+}
+
+.border-box4 {
+    border: 3px solid white;
+    backdrop-filter: blur(10px);
+    margin: 0 1px;
+    padding-left: 40px;
+    padding-right: -4px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 2px 1px 3px #929add; 
+}
+
+
+
+/* Game Website */
+
+ .Game {
+     height: 100vh;
+     background-color: #000;
+     background-image: url("html\ 3.jpg");
+     background-size: cover;
+     background-position: center;
+ }    
+ 
+ .Game-logo {
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+ 
+ }
+ 
+ li{
+     list-style: none;
+ 
+ }
+ 
+ a{
+     text-decoration: none;
+     color: #fff;
+     font-size: 1rem;
+     position: relative;
+     transition: all 0.4s;
+ }
+ 
+ a:hover, a:focus{
+     color:cyan
+ }
+ 
+ a::after{
+     content: '';
+     height: 2px;
+     width: 100%;
+     background: rgb(2, 182, 253);
+     position: absolute;
+     left: 0;
+     bottom: -8px;
+     opacity: 0;
+     transition: all 0.2s;
+     pointer-events: none;
+ }
+ 
+ a:hover::after, a:focus::after{
+    opacity: 1;
+ }
+ 
+ /*header*/
+ .Game-header {
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+     padding: 0 2rem;
+     background-color: #151B54;
+ }
+ 
+ .Game-nav{
+     width: 95%;
+     height: 60px;;
+     margin: 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .Game-nav .Game-logo{
+     font-size: 1.5rem;
+     font-weight: bold;
+ }
+ 
+ .Game-nav .Game-link{
+     display: flex;
+     gap: 2rem;
+ }
